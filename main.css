@@ -7,8 +7,10 @@ html, body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+
     padding-left: 50px;
     padding-right: 50px;
+
 }
 
 img {
@@ -80,6 +82,7 @@ img {
     flex-wrap: wrap;
     max-width: 900px;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .projektCard1,
