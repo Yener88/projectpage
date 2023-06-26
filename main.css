@@ -7,10 +7,8 @@ html, body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-
     padding-left: 50px;
     padding-right: 50px;
-
 }
 
 img {
@@ -63,7 +61,7 @@ img {
 }
 
 .titleLinks4 img {
-border-radius: 0;
+    border-radius: 0;
 }
 
 .titleLinks1:hover img,
@@ -132,6 +130,11 @@ border-radius: 0;
 @media (max-width: 900px) {
     .titleBoxText {
         font-size: 10px;
+    }
+
+    .titleBox {
+        border-radius: 0px;
+        margin: 0px;
     }
 
     .titleLinks1 img,
