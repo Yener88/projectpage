@@ -124,7 +124,6 @@ img {
 @media (max-width: 900px) {
     .titleBoxText {
         font-size: 10px;
-
     }
 
     .titleLinks1 img,
@@ -134,9 +133,9 @@ img {
         height: 30px;
         padding: 5px;
     }
-    html, body {
 
-        padding-left: 30px;
-        padding-right: 30px;
+    html, body {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
