@@ -6,6 +6,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 img {
@@ -29,15 +30,44 @@ img {
 .titleBoxText {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    margin: 10px;
+    justify-content: space-between;
+    padding: 10px;
     cursor: default;
-
+    font-size: 16px;
 }
 
 .titleBoxText a {
     text-decoration: none;
     color: black;
+    transition: all 0.7s ease-out;
+    border-radius: 100%;
+}
+
+.titleKontakt {
+    display: flex;
+    justify-content: end;
+}
+
+.titleLinks1 img,
+.titleLinks2 img,
+.titleLinks3 img {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.titleLinks1:hover img,
+.titleLinks2:hover img,
+.titleLinks3:hover img {
+    transform: scale(1.1);
+    transition: all 0.7s ease-out;
+}
+
+.titleTextBox {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
 }
 
 .projektBox {
@@ -45,7 +75,8 @@ img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 1000px;
+    max-width: 900px;
+    width: 100%;
 }
 
 .projektCard1,
@@ -85,4 +116,20 @@ img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     transition: all 0.7s ease-out;
     background-color: rgb(160, 255, 231);
+}
+
+@media (max-width: 900px) {
+    .titleBoxText {
+        font-size: 10px;
+
+    }
+
+    .titleLinks1 img,
+    .titleLinks2 img,
+    .titleLinks3 img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
 }
