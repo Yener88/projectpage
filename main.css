@@ -54,16 +54,22 @@ img {
 
 .titleLinks1 img,
 .titleLinks2 img,
-.titleLinks3 img {
+.titleLinks3 img,
+.titleLinks4 img {
     width: 50px;
     height: 50px;
     padding: 15px;
     border-radius: 100%;
 }
 
+.titleLinks4 img {
+border-radius: 0;
+}
+
 .titleLinks1:hover img,
 .titleLinks2:hover img,
-.titleLinks3:hover img {
+.titleLinks3:hover img,
+.titleLinks4:hover img {
     transform: scale(1.1);
     transition: all 0.7s ease-out;
 }
@@ -130,7 +136,8 @@ img {
 
     .titleLinks1 img,
     .titleLinks2 img,
-    .titleLinks3 img {
+    .titleLinks3 img,
+    .titleLinks4 img {
         width: 30px;
         height: 30px;
         padding: 5px;
