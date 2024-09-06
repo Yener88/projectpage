@@ -12,8 +12,8 @@ html, body {
 }
 
 img {
-    width: 177px;
-    object-fit: cover;
+    width: 193px;
+    object-fit: contain;
 }
 
 .titleBox {
