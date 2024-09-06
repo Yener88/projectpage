@@ -12,8 +12,9 @@ html, body {
 }
 
 img {
-    width: 193px;
+    width: 155px;
     object-fit: contain;
+    margin-bottom: -49px;
 }
 
 .titleBox {
