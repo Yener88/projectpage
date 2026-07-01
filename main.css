@@ -135,11 +135,8 @@ img {
 }
 
 .project-description {
-    font-size: 10px;
-    color: rgb(70, 70, 70);
-    letter-spacing: 1px;
+    font-size: 11px;
     text-transform: uppercase;
-    line-height: 1.3;
     text-align: center;
 }
 
