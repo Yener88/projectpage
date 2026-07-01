@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: 'Lexend Peta', sans-serif;
     margin: 0px;
     background-color: rgb(231, 231, 231);
@@ -23,7 +24,13 @@ img {
     flex-direction: row;
     background-color: rgb(160, 198, 255);
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    box-shadow:
+        rgba(0, 0, 0, 0.07) 0px 1px 2px,
+        rgba(0, 0, 0, 0.07) 0px 2px 4px,
+        rgba(0, 0, 0, 0.07) 0px 4px 8px,
+        rgba(0, 0, 0, 0.07) 0px 8px 16px,
+        rgba(0, 0, 0, 0.07) 0px 16px 32px,
+        rgba(0, 0, 0, 0.07) 0px 32px 64px;
     max-width: 900px;
     width: 100%;
     height: 250px;
@@ -79,6 +86,10 @@ img {
     font-weight: bold;
 }
 
+/* =======================
+   Projekte
+======================= */
+
 .projektBox {
     display: flex;
     justify-content: center;
@@ -89,55 +100,68 @@ img {
     padding-bottom: 50px;
 }
 
-.projektCard1,
-.projektCard2,
-.projektCard3,
-.projektCard4,
-.projektCard5,
-.projektCard6,
-.projektCard7,
-.projektCard8,
-.projektCard9,
-.projektCard10,
-.projektCard11,
-.projektCard12,
-.projektCard13,
-.projektCard14 {
+.project-card {
     width: 230px;
     height: 130px;
-    cursor: pointer;
-    background-color: rgb(160, 198, 255);
-    text-decoration: none;
     margin: 15px;
-    border-radius: 25px;
-    font-size: 20px;
-    color: black;
+    padding: 15px;
+    box-sizing: border-box;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgb(160, 198, 255);
+    border-radius: 25px;
+    cursor: pointer;
+
+    box-shadow:
+        rgba(0, 0, 0, 0.07) 0px 1px 2px,
+        rgba(0, 0, 0, 0.07) 0px 2px 4px,
+        rgba(0, 0, 0, 0.07) 0px 4px 8px,
+        rgba(0, 0, 0, 0.07) 0px 8px 16px,
+        rgba(0, 0, 0, 0.07) 0px 16px 32px,
+        rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
     transition: all 0.7s ease-out;
 }
 
-.projektCard1:hover,
-.projektCard2:hover,
-.projektCard3:hover,
-.projektCard4:hover,
-.projektCard5:hover,
-.projektCard6:hover,
-.projektCard7:hover,
-.projektCard8:hover,
-.projektCard9:hover,
-.projektCard10:hover,
-.projektCard11:hover,
-.projektCard12:hover,
-.projektCard13:hover,
-.projektCard14:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    transition: all 0.7s ease-out;
+.project-card:hover {
     background-color: rgb(160, 255, 231);
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: all 0.7s ease-out;
 }
+
+.project-description {
+    font-size: 10px;
+    color: rgb(70, 70, 70);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.project-title {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    transition: all 0.7s ease-out;
+}
+
+.project-card:hover .project-title {
+    transform: scale(1.03);
+}
+
+/* =======================
+   Responsive
+======================= */
 
 @media (max-width: 900px) {
     .titleBoxText {
@@ -158,11 +182,16 @@ img {
         padding: 5px;
     }
 
-    html, body {
+    html,
+    body {
         padding-left: 0px;
         padding-right: 0px;
     }
 }
+
+/* =======================
+   Scrollbar
+======================= */
 
 ::-webkit-scrollbar {
     height: 5px;
